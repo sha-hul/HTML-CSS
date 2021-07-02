@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid positioning</title>
+    <style>
+        .con
+        {
+            width: 700px;
+            margin: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3,150px);
+            grid-gap:20px;
+            /*1 to 5
+            and
+            2 to 3*/}
+        .item{
+            font-size: 20px;
+            text-align: center;
+            padding: 5px;
+        }
+        .con>*:nth-child(1){
+            background-color: lightseagreen;
+          /* grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;*/
+            grid-area: 2/2/3/3;
+        }
+        .con>*:nth-child(2){
+            background-color: lightblue;
+            grid-row: 2/span2;
+        }
+        .con>*:nth-child(3){
+            background-color: lightcyan;
+           /* grid-row-start:1;
+            grid-row-end: 2;
+            grid-row:1/2;*/
+           /* grid-column-start: 2;
+            grid-column-end:3;
+            grid-column: 2/3;*/
+            grid-row: 2/4;
+            grid-column: 3/4;
+        }
+        .con>*:nth-child(4){
+            background-color: lightcoral;
+        }
+        .con>*:nth-child(5){
+            background-color: lightslategrey;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row: 1/span;
+            grid-column: 1/span3;
+        }
+        .con>*:nth-child(6){
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="item">first</div>
+        <div class="item">second</div>
+        <div class="item">thrid</div>
+        <div class="item">four</div>
+        <div class="item">five</div>
+        <div class="item">six</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+// var element;
+// element= document.getElementById("Heading");
+// console.log(element);
+// var element=document.getElementsByClassName("main");
+// console.log(element);
+// var element=document.getElementsByTagName("ul")[1];
+// console.log(element);
+// var a=document.body;
+// console.log(a);
+var a=document.getElementById("Heading").style.backgroundColor="yellow";
+console.log(a)
+// var a=document.getElementById("Heading").innerHTML;
+// console.log(a);
+// var a=document.getElementById("Heading").attributes
+// console.log(a);
+// var a=document.getElementById("Heading").attributes[1]
+// console.log(a);
+// var a=document.getElementById("Heading").attributes[1].value
+// console.log(a);
+// var a=document.getElementById("Heading").attributes[1].name
+// console.log(a);
+// var a=document.getElementById("Heading").innerHTML="<h1>WOW</h1>";
+// console.log(a);
+// we can change the attribute name
+// document.getElementById("Heading").setAttribute("class","xyz")
+// var a=document.getElementById("Heading").getAttributeNode("class");
+// console.log(a);
+// document.getElementById("Heading").setAttribute("class","xyz")
+// var a=document.getElementById("Heading").getAttributeNode("class");
+// console.log(a);
+// document.getElementById("Heading").setAttribute("style","border:10px rigid yellow");
+// var a=document.getElementById("Heading").attributes[2];
+// console.log(a);
+var b=document.getElementById("Heading").setAttribute("style","border:none");
+// var a=document.getElementById("Heading").removeAttribute("style");
+// console.log(a);
+// querryselctor
+// var a=document.querySelectorAll(".menu>ul>li");
+// var a=document.querySelectorAll("#Heading h1")[1].innerHTML="Shahul Eeeyee";
+// document.querySelector("#Heading").style.color="cyan";
+// document.querySelector("#Heading").style.backgroundColor="black";
+// document.querySelector("#Heading").className="eeyee"
+// document.querySelector("#Heading").classList;
+// var a=document.querySelector("#Heading").classList;
+// console.log(a);

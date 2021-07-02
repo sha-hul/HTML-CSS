@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                box-sizing: border-box;
+                background-color:green;
+                opacity: 0.7;
+                border-radius: 5px;
+                padding-left: 3px; 
+            }
+            input[type="submit"]{
+                margin:0px 5px 5px 1200px;
+                padding: 10px;
+                background-color: royalblue;
+                border: none;
+                border-radius: 2px;
+                cursor: pointer;
+                color:white;
+            }
+            input[type="text"],select,textarea{
+                margin:10px 0px 10px 200px;
+                padding: 10px 800px 0px 0px;
+                border: 1px solid red;
+                border-radius: 3px;
+                resize:vertical;
+            }
+            label{
+                margin:10px 0px 10px 8px;
+                display: inline-block;
+            }
+            select{
+                margin-left: 220px;n
+            }
+            #s{
+                padding-bottom: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form enctype="multipart/form-data" method="POST" action="#">
+        <div class="container">
+            <div class="form">
+      <label for="text1">First Name:</label>
+      <input id="text1" type="text" placeholder="your name"><br>
+            </div>
+            <div  class="form">
+            <label for="text2">Last Name:</label>
+            <input id="text2" type="text" placeholder="Your Last Name"><br>
+           </div>
+           <div class="form" >
+      <label for="con">
+          Country:
+      </label>
+      <select id="con" name="country">
+          <option value="select country">select country</option>
+          <option value="ind">ind</option>
+          <option value="aus">aus</option>
+          <option value="usa">usa</option>
+      </select><br>
+      </div>
+      <div class="form">
+      <label id="s"for="ta">Commands</label>
+      <textarea id="ta"  placeholder="Write something" >
+      </textarea><br>
+      </div>
+      <div id="submit">
+      <input type="submit" value="Submit">
+      </div>
+      </div>
+    </form>
+    </body>
+</html>

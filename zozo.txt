@@ -1,0 +1,6 @@
+package 1
+        flight=Rs.15000(Bussiness class)
+        flight=Rs.10000(Economy class)
+package 2
+        train=Rs.8000(AC)
+        train=Rs.6000(Sleeper)

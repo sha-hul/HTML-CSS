@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                text-transform: capitalize;
+
+            }
+            #a{
+                list-style-type:disc ;
+                list-style-position: inside;
+            }
+            #b{
+                list-style-type: circle;
+                list-style-position: outside;
+            }
+            #c{
+                list-style-type:decimal;
+            }
+            #d{
+                list-style-type:lower-roman ;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>list style types</h1>
+        <ul id="a">
+            <li>front end development
+                <ul id="b">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>javascript
+                        <ol start="20" id="c">
+                            <li>React js</li>
+                            <li>Angular js</li>
+                            <li>Vue js</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li>Backend development
+                <ul id="d">
+                <li>java</li>
+                <li>sql</li>
+                <li>node js</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

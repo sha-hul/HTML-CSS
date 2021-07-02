@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>formtask</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale:1.0">
+        <style>
+            input[type=text],select,textarea{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <form enctype="multipart/form-data" method="GET" action="#">
+    <label for="aaa">First Name</label>
+    <input id="aaa" type="text" placeholder="Your Name.."><br>
+    <label for="aab">Last Name</label>
+    <input id="aab" type="text" placeholder="Your Last Name.."><br>
+    <label>Country</label>
+    <select name="country">
+        <option value="usa">usa</option>
+        <option value="ind">ind</option>
+        <option value="uk">uk</option>
+    </select><br>
+    <label for="aac">Subject</label>
+    <textarea id="aac" name="subject" placeholder="Write Something.." rows="10" cols="30"> 
+    </textarea>
+    <input type="submit" value="submit" >
+    </form>
+</html>

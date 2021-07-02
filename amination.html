@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            background-color: black;
+           }
+
+        .card{
+            color: black;
+            padding: 30px;
+            margin: 10px;
+            border:1px solid blue;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            margin-top: 200px;
+            font-size: 2rem;
+            text-align: center;
+            box-shadow: 0px 0px 16px yellow;
+            background-color: bisque;
+            /*animation: sample;
+            animation-duration: 2s;
+            animation-timing-function: cubic-bezier(1,0.1,0.1,0.4);
+            animation-delay: 2s;
+            animation-iteration-count:infinite;
+            animation-direction: alternate;*/
+            animation:sample 2s ease-in 2s infinite alternate;
+        }
+        @keyframes sample{
+            0%{border-radius:0%;background-color: blueviolet;}
+            50%{ border-radius:50%;
+            background-color: tomato;}
+            100%{border-radius:100%;background-color: white;}
+        }
+    </style>
+</head>
+<body>
+   <div class="con">
+        <div class="card">Man</div>
+    </div>
+</body>
+</html>

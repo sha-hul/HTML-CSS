@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: black;
+            }
+            input[type=submit]{
+                border: 1px solid red;
+                height: 50px;
+                width: 50px;
+                margin:3px 0px 0px 350px;
+               border-radius:50px; 
+               text-align: center;
+               background-color: orange;
+               color: white;
+               box-shadow: 0px 0px 10px white;
+            }
+            fieldset{
+                color: white;
+                box-shadow:0px 0px 15px orange ;
+                border: 3px double purple;
+                margin:10px 0px;
+                border-radius: 15px;
+                padding-left: 20px;
+                width: 60%;
+            }
+            legend{
+                color: white;
+                border: 0px solid orange;
+                background-color: orange;
+                border-radius: 3px;
+                margin:0px 0px 0px 300px ;
+                box-shadow: 0px 0px 10px white;
+            }
+         
+        </style>
+    </head>
+    <boby>
+        <form>
+            <h1>Forms with Fieldset</h1>
+            <fieldset>
+                <legend>
+                    Login Details
+                </legend>
+                <label for="aa">User Name:</label><br>
+                <input type="text"id="aa"><br>
+                <label for="ab">Email Id:</label><br>
+                <input id="ab" type="email"><br>
+                <label for="ac">Password:</label><br>
+                <input id="ac" type="password"><br>
+                <label for="ad">Confirm Password:</label><br>
+                <input id="ad" type="password"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Education Details</legend>
+                <label for="ae">Collage Name:</label><br>
+                <input type="text" id="ae"><br>
+                <label for="as">Qualification:</label><br>
+                <input type="text" id="as"><br>
+                <label for="aq">Year Of Passing:</label><br>
+                <input type="number" min="2000" max="2021" id="aq">
+            </fieldset>
+            <input type="submit" value="submit">
+        </form>
+    </boby>
+</html>

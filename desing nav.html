@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&effect=3d" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            box-sizing: border-box;           
+        }
+        body{           
+            background-image: url('bw2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        ul{
+            margin-left: 830px;
+            list-style: none;
+            overflow: hidden;
+            background-color:black;
+        }
+        li{
+            float: left;
+            min-width: 100px;
+            padding: 8px 16px;
+            border-right: 1px solid black ;
+            border-radius: 18px;
+            color: blue;
+            text-shadow: 0px 0px 10px blue;
+            text-align: center;
+            font-family: 'Kaushan Script', cursive;
+            font-weight: bold
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            color:blue; 
+            border-radius: 18px;
+            border-bottom:1px solid black ;
+            text-align: center;
+            font-family: 'Kaushan Script', cursive;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            width: 100%;
+        }
+        .dd-content{
+            position: absolute;
+            top: 55px;
+            left: 928px;
+            display:none ;
+            min-width: 100px;
+            background-color:black ;
+            z-index: 1;
+        }
+        .dd-button{
+            max-width: 100px;
+        }
+        .dd-content a{
+            padding: 8px 16px;
+        }
+        li:hover{
+            box-shadow: inset 0px 0px 10px ;
+        }
+        a:hover{
+            box-shadow: inset 0px 0px 10px;
+        }
+        .dd-button:hover .dd-content{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <ul>
+            <li>Home</li>
+            <li class="dd-button">class
+                <ul>
+                    <div class="dd-content">
+                    <a href="#">Student</a>
+                    <a href="#">Stokes</a>
+                    <a href="#">Sona</a>
+                    </div>
+                </ul>
+            </li>
+            <li>Contact</li>
+            <li>Complain</li>
+        </ul>
+    </div>
+</body>
+</html>

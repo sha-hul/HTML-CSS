@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: black;        
+        }
+      
+        li a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 8px 16px;
+        }
+        .dropdown
+        {
+            position: relative;
+            display: inline-block;
+           
+        }
+        .dd-button{
+            color: white;
+            background-color: rgb(240, 197, 119);
+            padding: 8px 16px;
+            min-width: 160px;
+        }
+        .dd-content{
+            position: absolute;
+            display:none;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dd-button:hover{
+            background-color: cornflowerblue;
+        }
+        .dropdown:hover .dd-content{
+            display: block;
+        }
+        li a:hover{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <div class="dd-button">
+            Home
+        </div>
+      <div class="dd-content">
+        <ul>
+            <li><a href="#">class</a></li>
+            <li><a href="#">Student</a></li>
+            <li><a href="#">Teacher</a></li>
+        </ul>
+      </div>
+    </div>
+</body>
+</html>

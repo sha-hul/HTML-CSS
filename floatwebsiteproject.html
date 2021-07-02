@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        body{
+            width: 1200px;
+            height: 445px;
+            margin: auto;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        /*header*/
+        ul.header{
+            list-style-type: none;
+            background-color: rgb(99, 91, 91);
+            padding: 15px;
+            margin: 0px;
+        }
+        li.headr{
+            display: inline;
+        }
+        li.headr a{
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+          
+        }
+        li.headr a:hover{
+            background-color: rgb(46, 34, 34);
+        }
+     
+        .aside{
+            width: 30%;
+            float: left;
+        }
+        .aside ul{
+            list-style: none;
+        }
+        .aside ul li{
+            background-color:gray;
+            margin: 10px;
+            padding: 10px;
+        }
+        .aside>ul>li>a{
+            text-decoration: none;
+            color: white;        
+        }
+        .aside>ul>li:hover{
+            background-color:black;
+        }
+        .content{
+            width: 70%;
+            float: left;
+        }
+        .clearfix::after{
+            display: table;
+            content: "";
+            clear: both;
+        }
+        #city{
+            background-color: rgb(40, 113, 155);
+            padding: 25px;
+            text-align: center;
+            color: white;
+        }
+       .footer{
+            width: 100%;
+            padding: 30px;
+            background-color: rgb(92, 86, 86);
+            color: White;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="header">
+        <li class="headr"><a style="background-color: yellowgreen;" href="#">Home</a></li>
+        <li class="headr"><a href="#">News</a></li>
+        <li class="headr"><a href="#">Contact</a></li>
+        <li class="headr"><a href="#">About</a></li>
+    </ul>
+    <div class="clearfix">
+    <div class="aside " >
+        <ul>
+            <li><a href="#">The Flight</a></li>              
+            <li style="background-color: rgb(40, 113, 155);"><a href="#">The City</a></li>
+            <li><a href="#">The Island</a></li>
+            <li><a href="#">The Food</a></li>
+            <li><a href="#"> The People</a></li>
+            <li><a href="#">The History</a></li>
+            <li><a href="#">The Oceans</a></li>
+        </ul>
+    </div>
+    <div class="content" >
+    <h1 id="city">THE CITY</h1>
+    <div class="para"><h1>Chania</h1>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    <p>You will learn more about responsive web pages in a later chapter.</p>
+    </div>
+    </div>
+    </div>
+  
+    <div class="footer">Footer Text</div>
+</body>
+</html>

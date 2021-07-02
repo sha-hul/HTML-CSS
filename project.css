@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 1200px;
+    background-color: #bbb;
+    /* overflow: auto; */
+}
+.conmain{
+    margin: 10px auto;
+}
+.conmain h2{
+    margin: 0%;
+    background-color: cyan;
+    padding: 10px;
+    font-family: 'Reggae One', cursive;
+}
+.hi h2::first-letter{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.nav{
+    margin-bottom: 20px;
+}
+.con::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.con{
+    margin-bottom: 20px;
+}
+.bottle{
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.bottle .box{
+    padding: 30px;
+    background-color: white;
+    margin-right: 10px;
+}
+.bottle .box:last-child{
+    margin-right: 0px;
+}
+.gallerheading{
+    margin-top: 10px;
+    padding: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.gallery{
+    border: 1px solid #ccc;
+    width:25%;
+    float: left;
+    padding: 10px;
+   }
+   div{
+       text-align: center;
+       padding: 10px;
+   }
+   div.gallery img{
+       width: 100%;
+       height: auto;
+   }
+   div.gallery:hover {
+       border: 2px outset #777;
+   }
+   @media only screen and (max-width:700px){
+       .gallery{
+           float: left;
+           width: 50%;
+       }
+   }
+
+   @media only screen and (max-width:400px){
+       .gallery{
+           width: 100%;
+       }
+   }
+   .haha{
+       text-align:left;
+   }
+   .footer{
+       margin-top: 10px;
+       float: left;
+       background-color: white;
+       width: 100%;
+       text-align: left;
+   }
+ .float{
+     background-color: white;
+     box-sizing: border-box;
+ }
+ .float .tank1{
+    width: 65%;
+    float: left;
+ }
+ .float .tank2{
+     width: 30%;
+     float: left;
+ }
+ .float .tank2 ul{
+     list-style: none;
+     padding: 0px;
+     margin: 0px;
+
+ }
+ .float .tank2 ul li{
+     background-color:black;
+     color: white;
+     padding: 15px;
+     margin: 5px;
+ }
+ .float .tank2 ul li:hover{
+     background-color: cyan;
+ }
+ .float::after{
+     clear: both;
+     display: table;
+     content: "";
+ }
+ .float .tank1 h1{
+    padding: 20px;
+    background-color: cyan;
+    margin-bottom: 30px;
+ }
+ .conmain .nav{
+    position: sticky;
+    z-index: 1;
+ }
+ .conmain{
+     padding: 0px;
+ }
+ .conmain .haha{
+     padding: 0px;;
+ }
+ .conmain .haha h2{
+     padding: 15px;
+ }

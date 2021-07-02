@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown-Image</title>
+    <style>
+        .dropdown{
+            position:relative;
+            display: inline-block;
+        }
+        .dd-content{
+            position: absolute;
+            display:none ;
+        }
+        .dropdown:hover .dd-content{
+            display: block;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+            <img src="doll.jpg" width="100px" height="100px">
+        <div class="dd-content">
+           
+                <img src="doll.jpg" width="300px" height="300px">
+                <figcaption>Wow What a Cute Doll&#128509;</figcaption>
+           
+        </div>
+    </div>
+</body>
+</html>

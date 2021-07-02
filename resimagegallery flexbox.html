@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+    h1{
+        background-color: lightgray;
+        padding: 20px;
+        text-align: center;
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+    .con{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        padding: 10px;
+        border: 1px solid #eee;
+    }
+    .con .tank img {
+        width: 100%;;
+    }
+    .con .tank{
+        flex: 25%;
+        max-width: 25%;
+        padding: 0px 4px;
+    }
+    .con .tank img:hover{
+        border: 1px solid black;
+        border-radius: 0px 0px 10px;
+    }
+    @media screen and (max-width:1000px){
+        .con .tank{
+        flex: 30%;
+        max-width: 30%;
+        padding: 0px 4px;
+    }
+    }
+    @media screen and (max-width:800px){
+        .con .tank{
+        flex: 50%;
+        max-width: 50%;
+        padding: 0px 4px;
+    }
+    }
+    @media screen and (max-width:500px){
+        .con .tank{
+        flex: 100%;
+        max-width: 100%;
+        padding: 0px 4px;
+    }
+    }
+</style>
+<body>
+    <h1>
+        Responsive Image Gallery
+    </h1>
+    <div class="con">
+        <div class="tank">
+            <img src="sun.jpg" alt="sun">
+            <img src="i3.jpg" alt="">
+            <img src="i7.jpg" alt="">
+            <img src="hv.jfif" alt="">
+        </div>
+        <div class="tank">
+            <img src="i3.jpg" alt="">
+            <img src="sun.jpg" alt="sun">
+            <img src="hv.jfif" alt="">
+            <img src="i7.jpg" alt="">
+        </div>
+        <div class="tank">
+            <img src="i7.jpg" alt="">
+            <img src="hv.jfif" alt="">
+            <img src="i3.jpg" alt="">
+            <img src="sun.jpg" alt="sun">
+        </div>
+        <div class="tank">
+            <img src="sun.jpg" alt="sun">
+            <img src="i3.jpg" alt="">
+            <img src="i7.jpg" alt="">
+            <img src="hv.jfif" alt="">
+        </div>
+        <div class="tank">
+            <img src="i7.jpg" alt="">
+            <img src="hv.jfif" alt="">
+            <img src="i3.jpg" alt="">
+            <img src="sun.jpg" alt="sun">
+        </div>
+        <div class="tank">
+            <img src="i3.jpg" alt="">
+            <img src="sun.jpg" alt="sun">
+            <img src="hv.jfif" alt="">
+            <img src="i7.jpg" alt="">
+        </div>
+    
+    </div>
+</body>
+</html>

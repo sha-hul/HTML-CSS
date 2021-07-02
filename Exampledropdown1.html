@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    ul{
+        list-style: none;
+        background-color: black;
+        overflow: hidden;
+    }
+    li{
+        color: white;
+        float: left;
+        padding: 10px;
+        min-width: 130px;
+        text-align: center;
+    }
+    li:hover{
+        background-color: rgb(138, 120, 138);
+    }
+    a{
+        display:inline-block;
+        background-color: tomato;
+        padding: 10px;
+        min-width: 130px;
+        display: block;
+        color:white;
+    }
+    a:hover{
+        background-color: thistle;
+    }
+    .dd-content{
+        position: absolute;
+        display:none ;
+        top: 38px;
+    }
+    .dropdown:hover .dd-content{
+        display: block;
+    }
+    </style>
+</head>
+<body>
+  <ul>
+      <li>Home</li>
+      <div class="dropdown">
+      <li class="dd-button">Program
+          <div class="dd-content">
+        <a href="#">C</a>
+        <a href="#">C#</a>
+        <a href="#">Python</a>
+        </div>
+      </li>
+      </div>
+      <li>Welcome</li>
+      <li>Web Developer</li>
+  </ul>
+</body>
+</html>

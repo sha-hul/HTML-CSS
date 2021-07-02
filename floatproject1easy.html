@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header,.footer{
+            padding: 10px;
+            background-color: gray;
+        }
+        .nav{
+            float: left;
+        }
+        .nav::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .nav{
+            width: 30%;
+        }
+        ul li{
+            list-style-type: none;
+            background-color: rgb(114, 114, 170);
+            width: 150px;
+            margin: 5px;
+            padding: 8px;
+        }
+        ul li:hover{
+            background-color: rgb(91, 77, 104);
+        }
+        .content{
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"><h1>Shahul</h1></div>
+    
+        <div class="nav">
+            <ul>
+                <li>Forest</li>
+                <li>island</li>
+                <li>Country</li>
+                <li>flight</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>hello world</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, asperiores!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, asperiores!</p>
+        </div>
+
+    <div class="footer"><h1>Briyani is ready</h1></div>
+</body>
+</html>

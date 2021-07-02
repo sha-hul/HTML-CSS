@@ -1,0 +1,101 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+.con{
+    position: relative;
+    overflow:hidden ;
+    width: 100%;
+    height: 100vh;
+}
+.con .slider {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 500%;
+    height: 100vh;
+    float: left;
+    animation: sample 15s linear infinite ;
+}
+.con .slider .slide{
+    width: 20%;
+    float: left;
+    height: 100%;
+    position: relative;
+}
+.con .slider .slide .content{
+    position: absolute;
+    padding: 20px 10px;
+    bottom:50px;
+    right: 50px;
+    left: 50px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.301);
+    transition: .8s all ;
+}
+.con .slider .slide .content h2{
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition: .8s;
+    color: white;
+}
+.con .slider .slide1{
+    background-image: url("cupboard.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.con .slider .slide2{
+    background-image: url("cupboard2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.con .slider .slide3{
+    background-image: url("i2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.con .slider .slide4{
+    background-image: url("living\ room.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.con .slider .slide1{
+    background-image: url("cupboard.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@keyframes sample {
+    0%{
+        left: 0%;
+    }
+    20%{
+        left: 0%;
+    }
+    29%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    55%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    79%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    
+    100%{
+        left: -400%;
+    }
+}

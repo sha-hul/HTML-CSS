@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdownzz1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+      .dropdown{
+        position: relative;
+        display: inline-block;
+      }
+      .dd-content{
+          position: absolute;
+          display:none ;
+          box-shadow: 0px 8px 16px 0px gray;
+          min-width: 160px;
+          z-index: 1;
+      }
+      ul{
+          list-style: none;
+          margin: 0;
+          padding: 0;         
+      }
+      ul li a
+      {
+        display: block;
+        text-decoration: none;
+        background-color: rgb(157, 129, 184);
+        padding: 8px 16px;
+      }
+      .dd-button{
+        background-color: blueviolet;
+        padding: 8px 16px;
+        min-width: 160px;
+        float: right;
+      }
+      ul li a:hover{
+          background-color: burlywood;
+      }
+      .dropdown:hover .dd-content{
+          display: block;
+      }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <div class="dd-button">Dropdown</div>
+            <div class="dd-content">
+                <ul>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Work1</a></li>
+                    <li><a href="#">Work2</a></li>
+                    <li><a href="#">Work3</a></li>
+                </ul>
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+      <form enctype="multipart/form-data" method="POST" >
+        <fieldset>
+        <legend>Application Form</legend>
+            <label for="aaa">Name</label>
+            <input id="aaa" type="text" placeholder="Enter the name" required ><br>
+            <label>Password</label>
+            <input type="password" placeholder="password"><br>
+            <label>email</label>
+            <input type="email" placeholder="mailid"><br>
+            <label>DOB</label>
+            <input type="date" >
+            </fieldset>
+            <fieldset>
+            <legend>Further detail</legend>    
+                <label>
+                gender
+            </label>
+            <input id="male" type="radio" name="gender"/><label for="male">male</label>
+            <input id="female" type="radio" name="gender" value="female"/><label for="female"> female</lable><br>
+            <label>skills</label>
+            <input id="html" type="checkbox" name="skills[]" value="html"><label for="html">html</label>
+            <input id="css" type="checkbox" name="skill[]]" value="css"><label for="css">css</label>
+            <input id="js" type="checkbox" name="skills[]" value="js"><label for="js">js</label>
+            <input id="bs" type="checkbox"name="skills[]" value="bootstrap"><label for="bs">bootstrap</label><br>
+            <label>department</label>
+            <select name="department" >
+                <option value="select depart"> select dept</option>
+                <option  value="eee">eee</option>
+                <option  value="cse">cse</option>
+                <option  value="ece">ece</option>
+             </select>
+             </fieldset>
+             <fieldset>
+                 <legend>further detail</legend>
+             <label>choose color</label>
+             <input type="color" ><br>
+             <label for="number">Age</label>
+             <input id="number" type="number" min="18" max="45" ><br>
+             <label>Upload File</label>
+            <input type="file"><br>
+            <label>Command</label>
+            <textarea rows="3" cols="5" placeholder="Feedback"></textarea><br>
+        </fieldset>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        </form>
+    </body>
+</html>

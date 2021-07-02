@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minmax</title>
+ <style>
+    .con
+    {
+        width: 700px;
+        height: 400px;
+        margin: 50px;
+    }
+    .item{
+        font-size: 20px;
+        text-align: center;
+        padding: 5px;
+    }
+    .con>*:nth-child(1){
+        background-color: lightseagreen;
+    }
+    .con>*:nth-child(2){
+        background-color: lightblue;
+    }
+    .con>*:nth-child(3){
+        background-color: lightcyan;
+    }
+    .con>*:nth-child(4){
+        background-color: lightcoral;
+    }
+    .con>*:nth-child(5){
+        background-color: lightslategrey;
+    }
+    .con>*:nth-child(6){
+        background-color: lightgoldenrodyellow;
+    }
+    .con{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2,1fr);
+        grid-gap: 5px;
+        grid-auto-rows:100px ;
+        /* grid-gap: 20px; */
+    }
+</style>
+</head>
+<body>
+<div class="con">
+    <div class="item">first Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore adipisci nulla culpa, voluptatibus saepe nam </div>
+    <div class="item">second</div>
+    <div class="item">thrid Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quo!</div>
+    <div class="item">four  sit am</div>
+    <div class="item">five .</div>
+    <div class="item">six</div>
+    <div class="item">four  sit am</div>
+    <div class="item">five .</div>
+    <div class="item">six</div>
+</div>
+</body>

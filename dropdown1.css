@@ -1,0 +1,62 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('doll.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+.nav{
+    background-color: thistle;
+}
+.nav ul{
+    list-style: none;
+    margin: 0px;
+}
+.nav::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+.nav>ul>li{
+    float: left;
+    position: relative;
+}
+.nav ul li a{
+ text-decoration: none;
+ color:blueviolet;
+ font-size: 1.2rem;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+ display: block;
+ padding: 8px 16px;
+}
+.nav ul li:hover a{
+background-color: rgb(180, 171, 163);
+}
+.nav ul ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    display: none;
+    z-index: 1;
+}
+.nav ul li:hover>ul{
+    display: block;
+}
+.nav ul ul li:hover a{
+    background-color: cadetblue;
+}
+.nav ul ul li{
+    position: relative;
+}
+.nav ul ul ul{
+    position:absolute ;
+    left: 80%;
+    top:0;
+}
+.nav ul ul ul li:hover a{
+        background-color: coral;
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.con{
+    position: relative;
+    top: 20px;
+    left: 300px;
+}
+input{
+    position: relative;
+    width: 240px;
+    font-size: 18px;
+}
+.icon{
+    position: absolute;
+    top: 0px;
+    left: 244px;
+    min-height: 24.67px;
+}
+.icon i{
+    background-color: lightslategrey;
+    color: white;
+    padding: 4px;
+    cursor: pointer;
+}
+.icon:hover i{
+    color: tomato;
+}
+.icon:hover>input{
+    width: 300px;
+}

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive;
+}
+
+.float.nav2{
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+.con{
+    width: 70%;
+    float: left;
+}
+.float.nav2 ul li a{
+    display: block;
+    padding: 8px;
+    margin: 8px;
+    background-color: cadetblue;
+    text-decoration: none;
+}
+.float.nav2 ul li:hover a{
+    background-color: cyan;
+}
+.float.main::after{
+  clear: both;
+ display: table;
+ content: "";
+}
+.float.con h1{
+    background-color:cyan;
+    margin: 8px;
+    padding: 30px;
+    height: 120px;
+}
+.float .con1
+{
+    margin: 8px;
+}

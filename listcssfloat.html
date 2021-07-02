@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          ul{
+              margin: 0px;
+              padding-left: 250px;
+              background-color: black;
+              list-style-type: none;
+          }
+          li{
+              display: inline;
+              
+          }
+          li a{
+              text-decoration: none;
+               color: white;
+               padding: 15px;
+               display: inline-block;
+          }
+          li a:active{
+           
+              background-color: gray;
+          }
+          #noneed{
+              display: none;
+          }
+          #notvisible{
+              visibility: hidden;
+          }
+        </style>
+    </head>
+    <body>
+        <h1>Flat on pros</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sliders</a></li>
+            <li><a href="#">Features</a></li>
+            <li id="notvisible"><a href="#">Shortcodes</a></li><!-- this li value is not visible but the place occupied by the li remains the same-->
+            <li id="noneed"><a href="#">Pages</a></li><!-- this li is not displayed in the screen-->
+            <li><a href="#">Shape</a></li>
+        </ul>
+        
+    </body>
+</html>

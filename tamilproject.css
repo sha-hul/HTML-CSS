@@ -1,0 +1,25 @@
+body{
+    width: 968px;
+    margin: 0px auto;
+   }
+
+h1 span{
+    font-weight: normal;
+
+}
+ul{
+    list-style-type: none;
+    background-color: black;
+    padding: 15px;
+}
+li{
+   display: inline;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px ;
+}
+li a:active{
+    background-color:grey;
+}

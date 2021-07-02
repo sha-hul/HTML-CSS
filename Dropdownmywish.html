@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropdownMyWish</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .nav{
+            
+            text-align: center;
+        }
+        /* Start of excess*/
+        /* bottom of Excess*/
+        .nav::after{
+            clear: both;
+            content: "";
+            display: table;
+        }
+        .nav ul{
+            list-style: none;
+        }
+        .nav>ul>li{
+            float: left;
+            position: relative;
+        }
+        .nav ul li a{
+            text-decoration: none;
+            color: blue;
+            text-shadow: 0px 0px 8px;
+            display: block;
+            padding: 8px 16px;
+        }
+       .nav ul li:hover a{
+           box-shadow: 0px 0px 8px rgba(0,0, 0, 0.4);
+          box-shadow: 0px 0px 16px;
+          border-radius: 15px;
+       }
+       .nav ul ul {
+           position: absolute;
+           display:none;
+           min-width: 160px;
+           top: 100%;
+           left: 0%;
+           z-index: 1;
+       }
+       .nav ul li:hover>ul{
+           display: block;
+       }
+       .nav ul ul li a:hover{
+        box-shadow:inset 0px 0px 16px;
+          border-radius: 15px;
+       }
+       .nav ul ul li{
+           position: relative;
+       }
+       .nav ul ul ul{
+           position: absolute;
+           left: 75%;
+           top:0;
+       }
+    </style>
+</head>
+<body>
+    <div class="nav">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Class</a></li>
+        <li ><a href="#">Web dev</a>
+            <ul >
+                <li ><a href="#">HTML</a></li>
+                <li ><a href="#">Java Script</a>
+                    <ul>
+                        <li ><a href="#">Angular JS</a></li>
+                        <li ><a href="#">React JS</a></li>
+                        <li ><a href="#">Ajax JS</a></li>
+                    </ul>
+                    <li ><a href="#">CSS</a></li>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+</body>
+</html>

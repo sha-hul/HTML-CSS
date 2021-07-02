@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid grey;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color:pink;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 100%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body> 
+<div style="background-color:red;padding:15px;">
+  <h1>Android</h1>
+  <h3>About Android</h3>
+</div>
+<div style="overflow:auto">
+  <div class="Menu">
+    <div class="menuitem">What is Android</div>
+    <div class="menuitem">Android 11</div>
+    <div class="menuitem">Phones </div>
+    <div class="menuitem">Tablets Enterprise</div>
+  </div>
+  <div class="main">
+    <h2>Android</h2>
+    <p>Android is a mobile operating system based on a modified version of the Linux kernel and other open source software, designed primarily for touchscreen mobile devices such as smartphones and tablets. Android is developed by a consortium of developers known as the Open Handset Alliance and commercially sponsored by Google. It was unveiled in November 2007, with the first commercial Android device launched in September 2008.</p>
+    <img src="Android.png" style="width:100%">
+  </div>
+  <div class="right">
+    <h2>Android 11</h2>
+    <p>Android Inc. was founded in Palo Alto, California, in October 2003 by Andy Rubin, Rich Miner, Nick Sears, and Chris White.[16][17] Rubin described the Android project as "tremendous potential in developing smarter mobile devices that are more aware of its owner's location and preferences"..</p>
+    <h2>Phones</h2>
+    <p>[17] The early intentions of the company were to develop an advanced operating system for digital cameras, and this was the basis of its pitch to investors in April 2004.</p>
+    <h2>Tablets</h2>
+    <p>[18] The company then decided that the market for cameras was not large enough for its goals, and by five months later it had diverted its efforts and was pitching Android as a handset operating system that would rival Symbian and Microsoft Windows Mobile.[18][19].</p>
+  </div>
+</div>
+<div style="background-color:blue;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> To create a responsive web page</div>
+</body>
+</html>
+

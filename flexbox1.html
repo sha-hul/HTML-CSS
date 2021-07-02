@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 1</title>
+    <style>
+        /*box arrangement*/
+        .container{
+            border: 5px solid red;
+            padding: 10px
+        }
+        .box{
+            border: 3px solid black;
+            padding: 30px;
+            margin: 10px;
+            font-size: 2.5rem;
+        }
+        .box:nth-child(odd){
+            background-color: rosybrown;
+        }
+        /*flex box*/
+        /*flex direction
+            row
+            row-reverse
+            column
+            column-reverse    
+        */
+        .container{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        /*flex wrap
+            nowrap=it is a default position
+            wrap=arrange the box with in the container
+            wrap-reverse=arrange the box in reverse order
+        */
+        .container{
+            display: flex;
+            flex-direction: row;
+            width: 350px;
+            flex-wrap: wrap-reverse;
+        }
+        /*justify-content
+            flex-start=start from begining
+             justify-content: flex-end;
+              justify-content: space-between;
+             justify-content: space-around;
+            */
+        .container{
+            display: flex;
+            width: 900px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content:center ;
+        }
+        /* align-content
+         align-content: stretch;(default position)
+            align-content:flex-start;
+             align-content: flex-end;
+                 align-content: center;
+                        align-content: space-around;
+                          align-content: space-between;
+        */
+        /* align-self
+         .box:nth-child(3){
+            align-self:flex-end ;
+        }
+        .box:nth-child(2)
+        {
+            align-self: center;
+        }
+        .box:nth-child(4){
+            align-self: flex-start;
+        }
+        .box:nth-child(5){
+            align-self: baseline;
+        }
+        */
+     
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+</body>
+</html>

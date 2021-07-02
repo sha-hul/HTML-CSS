@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            #body{
+                padding: 0px;
+                margin: 0px;
+            }
+            #container{
+                width: 100%;
+            }
+            .tanks{
+                border:1px solid brown;
+                height:70px;
+                font-size: 2rem;
+                float: left;
+                text-align: center;
+                line-height:70px;
+               
+            }
+            #tank1{
+                margin-left: 0px;
+                width:20%;
+                color: whitesmoke;
+                background-color: skyblue;
+            }
+            #tank2{
+                width:80%;
+                color: whitesmoke;
+                background-color: red;
+            }
+            #tank3{
+                clear: left;
+                line-height: 100px;
+                text-align: center;
+                color: red;
+                font-weight: bold;
+                font-size: 1.6rem;
+            }
+        </style>
+    </head>
+    <body id="body">
+        <div id="container">
+            <div class="tanks" id="tank1">
+                Left Float
+            </div>
+            <div class="tanks" id="tank2">
+                Right Float
+            </div>
+            <div id="tank3">
+                THE FLOAT PROPERTIES SPECIFIES HOW AN ELEMENT SHOULD FLOAT
+            </div>
+        </div>
+    </body>
+</html>

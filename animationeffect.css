@@ -1,0 +1,142 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.con{
+    position: relative;
+    width: 364px;
+    height: 139px;
+    margin: 50px;
+}
+@keyframes animate{
+   100%{
+        transform:rotateY(0deg);
+    }
+}
+.con .a:nth-child(1){
+    position: absolute;
+    background-image: url("./hv.jfif");
+    top: 0%;
+    left: 0%;
+    width: 91px;
+    height: 46.3333px;
+   background-position: 0 0;
+   animation-delay:.1s;
+}
+.con .a:nth-child(2){
+    position: absolute;
+    background-image: url("./hv.jfif");
+    width: 91px;
+    height: 46.3333px;
+    top: 0%;
+    left: 25%;
+    background-position:-91px 0px;
+    animation-delay:.2s;
+} 
+.con .a:nth-child(3){
+    position: absolute;
+    background-image: url("./hv.jfif");
+    width: 91px;
+    height: 46.3333px;
+    top: 0%;
+    left: 50%;
+    background-position: -182px 0px;
+    animation-delay:.3s;
+}
+.con .a:nth-child(4){
+    position: absolute;
+    background-image: url("./hv.jfif");
+    width: 91px;
+    height: 46.3333px;
+    top: 0%;
+    left: 75%;
+    background-position:  -273px 0px;
+    animation-delay:.4s;
+}
+.con .a:nth-child(5){
+    position: absolute;
+    background-image: url("./hv.jfif");
+    top: 33.3333%;
+    left: 0%;
+    width: 91px;
+    height: 47px;
+    background-position: 0px -46.333px;
+    animation-delay:.5s;
+}
+.con .a:nth-child(6){
+    position: absolute;
+    background-image: url("./hv.jfif");
+    width: 91px;
+    height: 47px;
+    top: 33.3333%;
+    left: 25%;
+    background-position: -91px -46.3333px ;
+    animation-delay:.6s;
+}
+.con .a:nth-child(7){
+    position: absolute;
+    background-image: url("./hv.jfif");
+    width: 91px;
+    height: 47px;
+    top: 33.3333%;
+    left: 50%;
+    background-position:-182px -46.3333px ;
+    animation-delay:.7s;
+}
+.con .a:nth-child(8){
+    position: absolute;
+    background-image: url("./hv.jfif");
+    width: 91px;
+    height: 47px;
+    top: 33.3333%;
+    left: 75%;
+    background-position: -273px -46.3333px;
+    animation-delay:.8s;
+}
+.con .a:nth-child(9){
+    position: absolute;
+    background-image: url("./hv.jfif");
+    top: 66.666%;
+    left: 0%;
+    width: 91px;
+    height: 46.3333px;
+    background-position: 0px -92.666px ;
+    animation-delay:900ms;
+}
+.con .a:nth-child(10){
+    position: absolute;
+    background-image: url("./hv.jfif");
+    width: 91px;
+    height: 46.3333px;
+    top: 66.666%;
+    left: 25%;
+    background-position: -91px -92.666px ;
+    animation-delay:1000ms;
+}
+.con .a:nth-child(11){
+    position: absolute;
+    background-image: url("./hv.jfif");
+    width: 91px;
+    height: 46.3333px;
+    top: 66.6666%;
+    left: 50%;
+    background-position:-182px -92.6666px ;
+    animation-delay: 1100ms;
+
+}
+.con .a:nth-child(12){
+    position: absolute;
+    background-image: url("./hv.jfif");
+    width: 91px;
+    height: 46.3333px;
+    top: 66.6666%;
+    left: 75%;
+    background-position: -273px -92.6666px;
+    animation-delay: 1200ms;
+}.con .a
+{
+    transform: rotateY(90deg);
+    animation: animate 1s linear ;
+    animation-fill-mode: forwards;
+    transform-origin: 0px;
+}

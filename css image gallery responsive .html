@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Image Gallery Responsive</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .gallery{
+         border: 1px solid #ccc;
+         width:25%;
+         float: left;
+         padding: 10px;
+        }
+        div{
+            text-align: center;
+            padding: 10px;
+        }
+        div.gallery img{
+            width: 100%;
+            height: auto;
+        }
+        div.gallery:hover {
+            border: 2px outset #777;
+        }
+        @media only screen and (max-width:700px){
+            .gallery{
+                float: left;
+                width: 50%;
+            }
+        }
+
+        @media only screen and (max-width:400px){
+            .gallery{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <a href="doll.jpg" target="_blank" >
+            <img src="doll.jpg" alt="Doll"> 
+        </a>
+        <div class="a"> This is a cute Doll</div>
+    </div>
+    <div class="gallery">
+        <a href="doll.jpg" target="_blank">
+            <img src="doll.jpg" alt="Doll"> 
+        </a>
+        <div class="a"> This is a cute Doll</div>
+    </div>
+    <div class="gallery">
+        <a href="doll.jpg" target="_blank" >
+            <img src="doll.jpg" alt="Doll"> 
+        </a>
+        <div class="a"> This is a cute Doll</div>
+    </div>
+    <div class="gallery">
+        <a href="doll.jpg" target="_blank">
+            <img src="doll.jpg" alt="Doll"> 
+        </a>
+        <div class="a"> This is a cute Doll</div>
+</body>
+</html>
