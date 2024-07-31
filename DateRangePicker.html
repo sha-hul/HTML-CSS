@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flatpickr Date Picker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <input type="text" id="datepicker" />
+
+    <script>
+    $(function() {
+        flatpickr('#datepicker', {
+            mode: 'range',
+            onChange: function(selectedDates, dateStr, instance) {
+                debugger
+                if (selectedDates.length > 0) {
+                    alert('Start date selected: ' + flatpickr.formatDate(selectedDates[0], 'Y-m-d'));
+                }
+            }
+        });
+    });
+    </script>
+</body>
+</html>
